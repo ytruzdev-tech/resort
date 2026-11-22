@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Balay da Cabral — Private Resort</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <!-- EmailJS Browser SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <span class="badge">Private Getaway • San Jose, Rodriguez, Rizal</span>
+      <h1 class="brand-title">Balay da Cabral</h1>
+      <p class="subtitle">Private Resort</p>
+      <p class="hero-desc">
+        Enjoy an exclusive private pool experience with family and friends[cite: 1]. Choose between Package 1 (up to 20pax) and Package 2 (up to 30pax*) for Daytime, Overnight, or Full Day stays[cite: 1].
+      </p>
+
+      <div class="gallery-grid">
+        <div class="gallery-card tactile-card">
+          <span class="gallery-tag">Interior &amp; Loft</span>
+          <h3>Lounge &amp; Dining Area</h3>
+          <p>Spacious indoor dining and kitchen counter setup with an upper loft area[cite: 1].</p>
+        </div>
+        <div class="gallery-card tactile-card">
+          <span class="gallery-tag">Poolside</span>
+          <h3>Private Swimming Pool</h3>
+          <p>Exclusive pool access perfect for daytime splashes and evening hangouts[cite: 1].</p>
+        </div>
+        <div class="gallery-card tactile-card">
+          <span class="gallery-tag">Evening Ambience</span>
+          <h3>Lit Night Exterior</h3>
+          <p>Warm outdoor lighting for relaxed overnight and 22-hour full day celebrations[cite: 1].</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Rates Section -->
+    <section id="rates">
+      <div class="section-header">
+        <h2>Packages &amp; Rates</h2>
+        <p>Filter schedules below to compare Weekdays (Mon - Thu) and Weekends (Fri - Sun) &amp; PH[cite: 1].</p>
+      </div>
+
+      <div class="controls-bar" role="group" aria-label="Schedule filters">
+        <button class="filter-btn tactile-btn active" data-filter="all" type="button">All Schedules</button>
+        <button class="filter-btn tactile-btn" data-filter="daytime" type="button">Daytime (10hrs)</button>
+        <button class="filter-btn tactile-btn" data-filter="overnight" type="button">Overnight (10hrs)</button>
+        <button class="filter-btn tactile-btn" data-filter="fullday" type="button">Full Day (22hrs)</button>
+      </div>
+
+      <div class="packages-grid">
+        <!-- Package 1 -->
+        <article class="package-card tactile-card">
+          <div class="package-top">
+            <h3>Package 1</h3>
+            <span class="pax-pill">up to 20pax</span>
+          </div>
+
+          <div class="rate-row" data-schedule="daytime">
+            <div class="rate-title">
+              <span>Daytime</span>
+              <span class="rate-time">8am–6pm (10hrs)</span>
+            </div>
+            <div class="prices">
+              <div class="price-box">
+                <small>Weekdays (Mon - Thu)</small>
+                <strong>₱6,500</strong>
+              </div>
+              <div class="price-box weekend">
+                <small>Weekends (Fri - Sun) &amp; PH</small>
+                <strong>₱7,500</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="rate-row" data-schedule="overnight">
+            <div class="rate-title">
+              <span>Overnight</span>
+              <span class="rate-time">8pm–6am (10hrs)</span>
+            </div>
+            <div class="prices">
+              <div class="price-box">
+                <small>Weekdays (Mon - Thu)</small>
+                <strong>₱6,500</strong>
+              </div>
+              <div class="price-box weekend">
+                <small>Weekends (Fri - Sun) &amp; PH</small>
+                <strong>₱7,500</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="rate-row" data-schedule="fullday">
+            <div class="rate-title">
+              <span>Full Day</span>
+              <span class="rate-time">8am–6am / 8pm–6pm (22hrs)</span>
+            </div>
+            <div class="prices">
+              <div class="price-box">
+                <small>Weekdays (Mon - Thu)</small>
+                <strong>₱13,000</strong>
+              </div>
+              <div class="price-box weekend">
+                <small>Weekends (Fri - Sun) &amp; PH</small>
+                <strong>₱14,000</strong>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Package 2 -->
+        <article class="package-card tactile-card">
+          <div class="package-top">
+            <h3>Package 2</h3>
+            <span class="pax-pill">up to 30pax*</span>
+          </div>
+
+          <div class="rate-row" data-schedule="daytime">
+            <div class="rate-title">
+              <span>Daytime</span>
+              <span class="rate-time">8am–6pm (10hrs)</span>
+            </div>
+            <div class="prices">
+              <div class="price-box">
+                <small>Weekdays (Mon - Thu)</small>
+                <strong>₱7,500</strong>
+              </div>
+              <div class="price-box weekend">
+                <small>Weekends (Fri - Sun) &amp; PH</small>
+                <strong>₱8,500</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="rate-row" data-schedule="overnight">
+            <div class="rate-title">
+              <span>Overnight</span>
+              <span class="rate-time">8pm–6am (10hrs)</span>
+            </div>
+            <div class="prices">
+              <div class="price-box">
+                <small>Weekdays (Mon - Thu)</small>
+                <strong>₱7,500</strong>
+              </div>
+              <div class="price-box weekend">
+                <small>Weekends (Fri - Sun) &amp; PH</small>
+                <strong>₱8,500</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="rate-row" data-schedule="fullday">
+            <div class="rate-title">
+              <span>Full Day</span>
+              <span class="rate-time">8am–6am / 8pm–6pm (22hrs)</span>
+            </div>
+            <div class="prices">
+              <div class="price-box">
+                <small>Weekdays (Mon - Thu)</small>
+                <strong>₱15,000</strong>
+              </div>
+              <div class="price-box weekend">
+                <small>Weekends (Fri - Sun) &amp; PH</small>
+                <strong>₱16,000</strong>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Booking Notes & EmailJS Inquiry Form -->
+    <section id="booking">
+      <div class="split-section">
+        <div class="panel tactile-card">
+          <h3>Resort Guidelines &amp; Notes</h3>
+          <ul class="notes-list">
+            <li>
+              <strong>*Package 2 Capacity:</strong> Package 2 is for daytime use only[cite: 1]. For overnight/full day stays, guests may still opt for this package as long as they agree to the limited sleeping capacity[cite: 1].
+            </li>
+            <li>
+              <strong>Kids Policy:</strong> Kids below 3yo are excluded in the headcount[cite: 1].
+            </li>
+            <li>
+              <strong>Flexible Timing:</strong> Check with us for flexible timing availability[cite: 1].
+            </li>
+          </ul>
+
+          <div class="direct-contact-card">
+            <h4>Direct Contact</h4>
+            <p><strong>Facebook Page:</strong> Balay da Cabral - Private Resort[cite: 1]</p>
+            <p><strong>Cellphone:</strong> <a href="tel:09973740298">09973740298</a>[cite: 1]</p>
+            <p><strong>Address:</strong> Block18 Lot1 Mt. Iglit Street, Amityville Subd. Phase1, San Jose, Rodriguez, Rizal[cite: 1]</p>
+          </div>
+        </div>
+
+        <div class="panel tactile-card">
+          <h3>Send Booking Inquiry (via EmailJS)</h3>
+          <form id="bookingForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="guestName">Full Name *</label>
+                <input type="text" id="guestName" name="guest_name" placeholder="Juan Dela Cruz" required />
+              </div>
+
+              <div class="form-group">
+                <label for="guestEmail">Email Address *</label>
+                <input type="email" id="guestEmail" name="guest_email" placeholder="juan@example.com" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="guestPhone">Mobile Number *</label>
+                <input type="tel" id="guestPhone" name="guest_phone" placeholder="09XX-XXX-XXXX" required />
+              </div>
+
+              <div class="form-group">
+                <label for="preferredDate">Preferred Date *</label>
+                <input type="date" id="preferredDate" name="preferred_date" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="pkgSelect">Package</label>
+              <select id="pkgSelect" name="package_name">
+                <option value="pkg1">Package 1 (up to 20pax)</option>
+                <option value="pkg2">Package 2 (up to 30pax*)</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="schedSelect">Schedule</label>
+                <select id="schedSelect" name="schedule_type">
+                  <option value="daytime">Daytime — 8am–6pm (10hrs)</option>
+                  <option value="overnight">Overnight — 8pm–6am (10hrs)</option>
+                  <option value="fullday">Full Day — 8am–6am / 8pm–6pm (22hrs)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="dayTypeSelect">Day Type</label>
+                <select id="dayTypeSelect" name="day_type">
+                  <option value="weekday">Weekdays (Mon - Thu)</option>
+                  <option value="weekend">Weekends (Fri - Sun) &amp; PH</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="extraNotes">Additional Requests / Headcount</label>
+              <textarea id="extraNotes" name="extra_notes" rows="3" placeholder="e.g., 18 adults + 2 kids below 3yo, flexible check-in inquiry..."></textarea>
+            </div>
+
+            <div class="estimate-box" id="estimateBox">
+              <small>Estimated Rate</small>
+              <div class="estimate-total" id="estimateAmount">₱6,500</div>
+              <small id="estimateNote">Package 1 (up to 20pax) • Daytime — 8am–6pm (10hrs) • Weekdays (Mon - Thu)</small>
+            </div>
+
+            <!-- Calm UI Friction: deliberate confirmation checkbox before sending -->
+            <label class="calm-check" for="confirmDetails">
+              <input type="checkbox" id="confirmDetails" required />
+              <span>I have reviewed my selected schedule, guest count notes, and contact details.</span>
+            </label>
+
+            <div class="action-buttons">
+              <button class="btn-primary tactile-btn" id="submitBtn" type="submit">Send Inquiry via Email</button>
+              <button class="btn-secondary tactile-btn" id="copyBtn" type="button">Copy Message for FB / SMS</button>
+            </div>
+
+            <div id="statusBanner" class="status-banner" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><strong>CONTACT US</strong> via our official Facebook page: <strong>Balay da Cabral - Private Resort</strong>[cite: 1]</p>
+      <p class="contact-highlight">Cellphone: 09973740298[cite: 1]</p>
+      <p>Address: Block18 Lot1 Mt. Iglit Street, Amityville Subd. Phase1, San Jose, Rodriguez, Rizal[cite: 1]</p>
+    </div>
+  </footer>
+
+  <!-- Hiwalay na JS modules -->
+  <script src="email-service.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
